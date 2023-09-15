@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Hello from moms!')
+    res.send(`Hello from moms!`)
 })
 
 app.get('/jokes', (req, res) => {
