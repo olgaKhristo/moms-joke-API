@@ -8,6 +8,10 @@ const port = process.env.PORT
 app.use(cors());
 app.use(express.json());
 
+const jokes = {
+    message:'Hello from moms!'
+}
+
 app.get('/', (req, res) => {
     res.json(jokes)
     // res.send(`Hello from moms!`)
