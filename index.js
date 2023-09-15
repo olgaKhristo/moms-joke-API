@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT
 
 const fs = require('fs');
-const jokes = JSON.parse(fs.readFileSync('jokes.json', 'utf8'));
+const jokes = JSON.parse(fs.readFileSync('./jokes.json', 'utf8'));
 
 app.use(express.json());
 app.use(cors());
