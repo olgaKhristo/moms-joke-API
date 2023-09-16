@@ -3,8 +3,8 @@ const cors = require('cors');
 const express = require('express');
 const app = express();
 // const jokes = require('./jokes.json')
-const port = process.env.PORT
-
+//const port = process.env.PORT
+const port = 3000;
 const fs = require('fs');
 const jokes = JSON.parse(fs.readFileSync('./jokes.json', 'utf8'));
 
